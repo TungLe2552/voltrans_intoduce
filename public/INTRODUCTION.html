@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/theme/fonts/fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Welcome to Voltrans – Voltrans Logistics</title>
+  <link rel="icon" href="/theme/images/cropped-logo-voltrans-navicat-192x192.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'mm': '375px',
+          'sm': '640px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+          'md2': '769px',
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+          '3xl': '1920px',
+        },
+
+        fontFamily: {
+          montser: ["MyriaPro", "sans-serif"],
+          Roboto: ['Roboto', 'sans-serif'],
+          Titilium: ['Titillium', 'sans-serif'],
+        },
+        fontSize: {
+          xs: ".75rem",
+          sm: ".875rem",
+          tiny: ".875rem",
+          base: "1rem",
+          lg: "1.125rem",
+          xl: "1.35rem",
+          "2xl": "1.5rem",
+          "3xl": "1.875rem",
+          "3.5xl": "2rem",
+          "4xl": "2.25rem",
+          "5xl": "3rem",
+          "6xl": "4rem",
+          "7xl": "6rem",
+          xxl: "4.5625rem",
+        },
+        fontWeight: {
+          hairline: 100,
+          "extra-light": 100,
+          thin: 200,
+          light: 300,
+          normal: 400,
+          medium: 500,
+          semibold: 600,
+          bold: 700,
+          extrabold: 800,
+          "extra-bold": 800,
+          black: 900,
+        },
+        extend: {
+          keyframes: {
+            turndown: {
+              '0%': { transform: 'translateY(-100%)' },
+              '100%': { transform: 'translateY(0%)' },
+            }
+          },
+          animation: {
+            turndown: 'turndown .4s ease-in-out',
+          },
+          spacing: {
+            128: "32rem",
+            144: "36rem"
+          },
+          width: {
+            20: "20%",
+            30: "30%",
+            40: "40%",
+            50: "50%",
+            60: "60%",
+            70: "70%",
+            80: "80%",
+            90: "90%",
+          },
+          borderRadius: {
+            "4xl": "2rem"
+          },
+          backgroundImage: {
+            'hero': "url('/theme/images/header_bg_13.jpg')",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body class="max-w-screen-2xl">
+  <!--begin header -->
+  <div class="w-full relative bg-hero bg-center">
+    <!-- <div class="absolute top-0 flex h-full w-full">
+      <div class="flex-1 bg-hero w-full z-0"></div>
+    </div> -->
+    <div class="top-head font-Roboto relative z-10">
+      <div class=" bg-[#183650] w-full h-[3.125rem] md2:flex text-white justify-center items-center mm:hidden ">
+        <ul class="w-[70%] flex lg:gap-[4.7rem] md:gap-5 items-center justify-end text-[0.825rem]">
+          <li class="flex gap-2 items-center">
+            <i class="fa-solid fa-mobile-screen-button text-[1rem]"></i>
+            <p>
+              Tel: +84 287-108-8499
+            </p>
+          </li>
+          <li class="">
+            <a class="flex gap-2 items-center" href="">
+              <i class="fa-regular fa-envelope text-[1rem]"></i>
+              <p class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[0.5px] after:w-0 hover:after:w-full">
+                info@voltransvn.com
+              </p>              
+            </a>
+
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-regular fa-clock text-[1rem]"></i>
+            <p>
+              Mon — Sat: 8AM — 5PM
+            </p>
+          </li>
+        </ul>
+        <div class="head-office w-[25%] flex h-full">
+          <div id="head-menu" class=" ml-[12%]  justify-center relative z-20">
+            <button class="bg-[#34ccff] h-full flex items-center w-[13rem]">
+              <i class="fa-solid fa-earth-americas ml-4 mr-5"></i>
+              <p class="uppercase text-[0.825rem]">
+                HEAD OFFICE
+              </p> 
+              <i class="fa-solid fa-chevron-down text-[0.5rem] ml-12"></i>
+            </button>               
+            
+            <div id="head-menu-item" class=" absolute top-full bg-[#183650] w-full hidden z-10">
+              <ul class="uppercase py-3 text-[0.8125rem] font-normal">
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    head office
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    ho chi minh air division
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    da nang office
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    hai phong office
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    ha noi office
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    noi bai air division
+                  </a>
+                </li>
+                <li class="py-[0.625rem] px-5 hover:bg-[#34ccff]">
+                  <a href="">
+                    phnom penh office
+                  </a>
+                </li>
+              </ul>
+            </div>     
+          </div>
+        </div>
+        <div class="w-[5%]"></div>
+      </div>
+    </div>
+    <div style="font-family: 'Titillium Web', sans-serif;" class="mid-head w-full flex relative bg-white">
+      <div class="logo lg:w-[37%] md2:w-[30%] flex items-center justify-center">
+        <div class="h-full flex items-center w-full md:justify-center mm:justify-start">
+          <div class="md:w-[150px] md:h-[46px] mm:w-[128px] mm:h-[39px] py-[2.8rem] flex md:justify-center items-center">
+            <a href="https://voltransvn.com/">
+              <img class="mm:mb-6 md2:mb-0 md2:ml-5 md:ml-10 mm:ml-3" src="/theme/images/logo-voltrans-1 (1).png" alt="">
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="w-[50%] md2:flex items-center mm:hidden">
+        <div class="w-full flex justify-center gap-x-[3.25rem] flex-wrap text-base font-semibold h-full text-[#183650]">
+          <div class="py-[2rem] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[4px] hover:after:w-full after:bg-[#34ccff] after:scale-x-125">
+            <a href="">
+              Welcome to Voltrans
+            </a>
+          </div>
+          <div class="group py-[2rem] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[4px] hover:after:w-full after:bg-[#34ccff] after:scale-x-125">
+            <a class="h-full" href="">
+              Our Services
+            </a>
+            <ul class="text-white text-[0.825rem] font-normal py-[1.25rem] absolute top-full -left-3 bg-[#183650] w-[16.5rem] hidden group-hover:block z-50">
+              <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Track and Trace
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Request For Quotation
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Sea Freight
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Air Freight
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Inland Freight
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Value-Added Services
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Incoterms
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Container Dimensions
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Dangerous Goods Guide
+              </a>
+            </li>
+            <li class="w-full pl-[1.25rem] py-[0.625rem] hover:bg-[#34ccff]">
+              <a href="">
+                Common Airports and Seaports in Vietnam
+              </a>
+            </li>
+            </ul>
+            
+          </div>
+          <div class="py-[2rem] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[4px] hover:after:w-full after:bg-[#34ccff] after:scale-x-125">
+            <a href="">
+              Request For Quotation
+            </a>
+          </div>
+          <div class="group py-[2rem] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[4px] hover:after:w-full after:bg-[#34ccff] after:scale-x-125">
+            <a href="">
+              Our Company
+            </a>
+            <div class="absolute -left-3 top-full bg-[#183650] text-white text-[0.8125rem] font-normal hidden group-hover:block z-50">
+              <ul class="py-[0.625rem] w-[8rem]">
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    Leadership
+                  </a>
+                </li>
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    Voltrans Careers
+                  </a>
+                </li>
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    Voltrans Tech
+                  </a>
+                </li>
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    News
+                  </a>
+                </li>
+                <li class="pl-[1.25rem] py-[0.635rem] hover:bg-[#34ccff]">
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="menu-bar mm:flex md2:hidden w-full justify-end">
+        <button>
+          <i id="menu-bar" class="fas fa-bars text-[1.5rem] mr-[2.875rem] mb-5"></i>
+        </button>
+        
+      </div>
+      <div id="items-bar" class="absolute top-full bg-white z-20 w-full font-Roboto hidden">
+        <ul class="text-[1rem] font-medium text-start">
+          <li class="py-[1rem] px-[1.5rem] border border-solid border-t-[#dddddd]">
+            <a class=" text-[#183650]" href="">
+              Welcome to Voltrans
+            </a>
+          </li>
+          <li class="py-[1rem] px-[1.5rem] border border-solid border-t-[#dddddd]">
+            <a class="text-[#183650]" href="https://voltransvn.com/our-services/">
+              Our Services
+            </a>
+          </li>
+          <li class="py-[1rem] px-[1.5rem] border border-solid border-t-[#dddddd]">
+            <a class="text-[#183650]" href="https://voltransvn.com/services/request-for-quotation/">
+              Request For Quotation
+            </a>
+          </li>
+          <li class="py-[1rem] px-[1.5rem] border border-solid border-t-[#dddddd]">
+            <a class="text-[#183650]" href="">
+              Our Company
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="md2:w-[13%]"></div>
+    </div>   
+    <div class="bot-head font-Raleway flex relative">
+      <div class="lg:w-[14%] "></div>
+      <div class="flex justify-start mm:mx-3 md:mx-6 md2:mx-14 lg:mx-0">
+        <h1 style="font-family: 'Raleway', sans-serif;" class="text-[3.25rem] font-bold py-[2.975rem] text-white">
+          Welcome to Voltrans
+        </h1>
+      </div>
+    </div> 
+  </div>
+  <!-- end header -->
+
+  <!-- begin main -->
+
+
+  <div class="flex">
+    <div class="lg:w-[16%]"></div>
+    <div class="get-content mt-[2.25rem] text-[1.0675rem] font-Roboto font-normal text-[#494d5c] leading-[1.625rem] w-full mm:mx-4 md2:mx-14 lg:mx-0">
+      <!-- bread crumb -->
+      <div class="flex">
+        <a class="text-[0.8125rem] text-[#183650] font-normal" href="https://voltransvn.com/">Voltrans Logistics</a>
+        <p class="text-[0.8125rem] text-[#808080] font-normal mx-2"> > </p>
+        <span class="text-[#808080] text-[0.8125rem] font-normal">Welcome to Voltrans</span>
+      </div>
+
+      <!-- content -->
+      <div class="get-content lg:w-[85%] mm:w-full md:w-[98%] mt-[4rem]">
+        <p>
+          Dear Esteemed Clients,
+          <p class="mb-[1.625rem]"></p>
+          Firstly, I’d like to express my sincerely thanks for your kind support, cooperation and trust by continuously using our services for your shipping & logistics needs.
+          <p class="mb-[1.625rem]"></p>
+          Since 2004, Voltrans has adhered to the operation philosophy of <strong class="text-[#404040] font-bold">“integrity, diligence and innovation”</strong>  towards specialization, informational global system. We continue to provide top notched global freight service to each and every client no matter how large our client base is, and manage every business aspect with high performance and superior quality.
+          <p class="mb-[1.625rem]"></p>
+        </p>        
+      </div>
+      <div class="get-content xl:w-[55%] md:w-[70%] w-[90%] mb-[4.125rem]">
+        <img class="" src="/theme/images/voltrans-logisti.png" alt="">
+      </div>
+      <div class="get-content lg:w-[90%] mm:w-full md:w-[98%]">
+        <p class="mb-[1.625rem]">
+          Voltrans continues to soar in developing service system with:
+        </p>
+        <div class="relative after:absolute after:h-1 after:w-1 after:rounded-full after:bg-[#34CCFF] after:top-[20%] after:left-0 mb-[0.75rem]">
+          <p class="ml-4 text-[#808080] text-[1rem]">
+            <strong class="text-[#404040] text-[1rem]">Experienced staff:</strong> not only from VOLTRANS current owned 8 offices in Vietnam, one in Cambodia, but also over 8,000 members in reliable global associations through partnership agreements.
+          </p>
+        </div>
+        <div class="relative after:absolute after:h-1 after:w-1 after:rounded-full after:bg-[#34CCFF] after:top-[20%] after:left-0 mb-[0.75rem]">
+          <p class="ml-4 text-[#808080] text-[1rem]">
+            <strong class="text-[#404040] text-[1rem]">Sophisticated computer network operating system:</strong> to ensure smooth communication and operation to cope with huge increasing shipments over the years.
+          </p>
+        </div>
+        <div class="relative after:absolute after:h-1 after:w-1 after:rounded-full after:bg-[#34CCFF] after:top-[20%] after:left-0 mb-[0.75rem]">
+          <p class="ml-4 text-[#808080] text-[1rem]">
+            <strong class="text-[#404040] text-[1rem]">Strong long-term cooperative relationship:</strong> with many reliable Airlines, Shipping lines to ensure absolute advantages in schedules, freight rates and services to clients.
+
+          </p>
+        </div>
+      </div>
+      <div class="get-content mt-8 xl:w-[55%] md:w-[70%] w-[90%] mb-[4.125rem]">
+        <img src="/theme/images/voltrans-logistics-events.png" alt="">
+      </div>
+      <div class="get-content text-[1.0625rem] text-[#494d5c] lg:w-[84%] mm:w-[98%]">
+        <p class="mb-[1.625rem]">
+          Our services encompass a wide range but not limited to all modes of transportation to global places but also value-added services like: 
+          <strong class="font-bold text-[#404040]">
+            Customs Declaration and Clearance, Entry-Exit Inspection, Quarantine of Goods, Warehousing, Consolidation, Marine Cargo Insurance, and much more.
+          </strong> We pay high attention to your needs and do non-stop efforts to meet your expectation.
+        </p>          
+
+        <p class="mb-[1.625rem]">
+          Not staying still with high reputation in shipping community, we confidently keep providing you with more convenient and timely shipping information, reasonable freight rates, accurate and stable shipping schedules, enabling you to enjoy the most surpassing VIP services in respective places.
+        </p>
+
+        <p class="mb-[1.625rem]">
+          We believe that you would keep Voltrans as your reliable and optimal partner as your satisfaction is our ultimate target.
+        </p>
+
+        <p class="mb-[1.625rem]">
+          Your ware, Our care! Yours Faithfully.
+        </p>
+        <p class="mb-[1.625rem] text-[1.0625rem] font-bold text-[#404040]">
+          Peter Vo Ta Vinh - President
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end main -->
+  <!-- begin footer -->
+  <div class="footer flex bg-[#fafafa] font-Roboto flex-wrap">
+    <div class="pt-[4.25rem] lg:w-[36.5%] md:w-[50%] mm:w-full flex ">
+      <div class="lg:w-[33.5%]"></div>
+      <div class="Our-company mm:mx-3 md:mx-5 pb-[4.375rem] ">
+        <h1 class="text-[1.375rem] font-bold text-[#212638]">
+          OUR COMPANY
+        </h1>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Welome to Voltrans
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              About Us
+            </a>
+          </li>
+          <li >
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Voltrans Events
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              News
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Media
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Contact Us
+            </a>
+          </li>
+        </ul>   
+        <ul class="mt-[1.75rem] text-[1.0625rem] text-[#212638] font-light">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Voltrans Careers 
+            </a>
+          </li>
+          <li>
+            <a class="mt-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Voltrans Engineering 
+            </a>
+          </li>
+        </ul>     
+      </div>
+    </div>
+    <div class="pt-[4.25rem] lg:w-[27%] md:w-[50%] mm:w-full flex justify-start">
+      <div class="All-sevices mm:mx-3 md:mx-5 pb-[4.375rem] ">
+        <h1 class="text-[1.375rem] font-bold text-[#212638]">
+          ALL SERVIECES
+        </h1>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Sea Freight
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Air Freight
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Inland Freight
+            </a>
+          </li>
+        </ul>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Value-added Serviecs
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Incoterm 2010
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Dangerous Goods
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Sea Freight Container Dimensions
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Common Air/Sea Ports In Vietnam
+            </a>
+          </li>
+        </ul>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Track And Trace
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Request For Quotation
+            </a>
+          </li>
+        </ul>
+      </div>      
+    </div>
+    <div class="pt-[4.25rem] flex justify-start">
+      <div class="Contact-us mm:mx-3 md:mx-5 pb-[4.375rem] ">
+        <h1 class="text-[1.375rem] font-bold text-[#212638]">
+          CONTACT US
+        </h1>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Contact Number
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Ho Chi Minh: (+84)287-108-8499
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              Ha Noi: (+84)247-108-8599
+            </a>
+          </li>
+        </ul>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              info@voltransvn.com
+            </a>
+          </li>
+        </ul>
+        <ul class="text-[1.0625rem] text-[#212638] font-light mt-[1.75rem]">
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              174/13 Dien Bien Phu St, Ward 17, Binh Thanh
+            </a>
+          </li>
+          <li>
+            <a class="relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#34ccff] hover:after:w-full" href="">
+              District, Ho Chi Minh City, Viet Nam
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="font-Roboto">
+    <div class="bg-[#183650] w-full flex flex-wrap-reverse items-center py-[1.675rem]">
+      <div class="text-[0.8125rem] leading-[0.95rem] font-normal text-[#ffffffb3] w-[48.5%] flex justify-center">
+        <p>
+          Copyright © 2019 Voltrans Logistics. All rights reserved
+        </p>
+      </div>
+      <div class="w-[51.5%] flex justify-end">
+        <div class="mr-[25%] flex gap-2">
+          <a href="https://www.facebook.com/Voltrans/">
+            <i class="fa-brands fa-facebook text-[2rem] hover:scale-125"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/voltrans-logistics-co.-ltd">
+            <i class="fa-brands fa-linkedin text-[2rem] hover:scale-125"></i>  
+          </a>
+                  
+        </div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+  <script src="/theme/js/main.js"></script>
+</body>
+</html>
